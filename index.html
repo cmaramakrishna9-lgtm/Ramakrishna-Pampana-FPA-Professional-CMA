@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Ramakrishna Pampana · FP&A Professional · CMA</title>
+<style>
+:root{--bg:#f7f6f2;--card:#fff;--ink:#1d2330;--mute:#6b7280;--line:#e6e3da;--acc:#1f4e5f;--acc2:#b08d57;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);color-scheme:light}
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:70px}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.6 "Inter",system-ui,-apple-system,"Segoe UI",sans-serif}
+h1,h2,h3{font-family:Georgia,"Times New Roman",serif;font-weight:600;line-height:1.15;margin:0}
+a{color:inherit}
+nav{position:sticky;top:env(safe-area-inset-top,0px);z-index:10;display:flex;justify-content:space-between;align-items:center;padding:12px 5vw;background:rgba(247,246,242,.85);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+nav .links{display:flex;gap:22px;font-size:14px}nav .links a{text-decoration:none;color:var(--mute)}nav .links a:hover{color:var(--ink)}
+.logo{display:flex;align-items:center;gap:10px;font-family:Georgia,serif;font-weight:600}
+section{padding:90px 5vw;max-width:1100px;margin:auto}
+.hero{display:grid;grid-template-columns:1.1fr .9fr;gap:40px;align-items:center;min-height:86vh}
+.tag{font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:var(--acc2);font-weight:600}
+h1{font-size:clamp(38px,6vw,64px);margin:14px 0}
+.lead{color:var(--mute);max-width:520px;font-size:18px}
+.btns{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}
+.btn{padding:12px 22px;border-radius:99px;text-decoration:none;font-weight:600;font-size:15px;border:1px solid var(--ink);transition:.25s}
+.btn.p{background:var(--ink);color:#fff}.btn:hover{transform:translateY(-2px);box-shadow:0 8px 20px rgba(0,0,0,.1)}
+.reel{background:linear-gradient(145deg,#fff,#efede6);border:1px solid var(--line);border-radius:24px;padding:26px;box-shadow:0 30px 60px -30px rgba(31,78,95,.35);position:relative;overflow:hidden}
+.reel:before{content:"";position:absolute;inset:0;background:linear-gradient(115deg,transparent 40%,rgba(255,255,255,.9) 50%,transparent 60%);transform:translateX(-120%);animation:sheen 5s infinite}
+@keyframes sheen{to{transform:translateX(120%)}}
+.reel .top{display:flex;justify-content:space-between;font-size:12px;color:var(--mute);margin-bottom:14px}
+.kpi{display:flex;gap:10px;margin-bottom:16px}.kpi div{flex:1;background:var(--card);border:1px solid var(--line);border-radius:12px;padding:10px 12px;font-size:11px;color:var(--mute)}
+.kpi b{display:block;font:600 20px Georgia,serif;color:var(--acc)}
+.bars{display:flex;align-items:flex-end;gap:8px;height:130px}
+.bars i{flex:1;background:linear-gradient(var(--acc),#6aa0b0);border-radius:6px 6px 0 0;height:20%;animation:grow 4s ease-in-out infinite}
+.bars i:nth-child(1){--h:45%}.bars i:nth-child(2){--h:62%;animation-delay:.15s}.bars i:nth-child(3){--h:50%;animation-delay:.3s}.bars i:nth-child(4){--h:78%;animation-delay:.45s}.bars i:nth-child(5){--h:68%;animation-delay:.6s}.bars i:nth-child(6){--h:92%;animation-delay:.75s}.bars i:nth-child(7){--h:85%;animation-delay:.9s}
+@keyframes grow{0%,100%{height:15%}40%,80%{height:var(--h)}}
+svg.line{width:100%;height:60px;margin-top:10px}.line path{fill:none;stroke:var(--acc2);stroke-width:2.5;stroke-dasharray:400;stroke-dashoffset:400;animation:draw 4s ease-in-out infinite}
+@keyframes draw{0%{stroke-dashoffset:400}50%,100%{stroke-dashoffset:0}}
+h2{font-size:clamp(28px,4vw,40px);margin:8px 0 34px}
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+.stat{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:22px}
+.stat b{font:600 34px Georgia,serif;color:var(--acc);display:block}.stat span{font-size:13px;color:var(--mute)}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:24px;transition:.3s}
+.card:hover{transform:translateY(-4px);box-shadow:0 18px 40px -22px rgba(0,0,0,.25)}
+.card h3{font-size:20px;margin-bottom:8px}.card p{margin:0;color:var(--mute);font-size:15px}
+.tl{border-left:2px solid var(--line);margin-left:6px}
+.job{position:relative;padding:0 0 34px 28px}.job:before{content:"";position:absolute;left:-7px;top:6px;width:12px;height:12px;border-radius:50%;background:var(--acc2);box-shadow:0 0 0 4px var(--bg)}
+.job h3{font-size:20px}.job .m{font-size:13px;color:var(--mute);margin:2px 0 8px}.job ul{margin:0;padding-left:18px;color:#3a4150;font-size:15px}.job li{margin-bottom:4px}
+.pills{display:flex;flex-wrap:wrap;gap:10px}.pills span{background:var(--card);border:1px solid var(--line);border-radius:99px;padding:8px 16px;font-size:14px}
+.contact{background:var(--ink);color:#fff;border-radius:28px;text-align:center;padding:60px 5vw;margin:40px 5vw 60px;max-width:none}
+.contact h2{margin-bottom:12px}.contact p{color:#b9bfcc}.contact .btn{border-color:#fff;color:#fff;margin:6px;display:inline-block;max-width:100%;overflow-wrap:anywhere}.contact .rv{display:flex;flex-wrap:wrap;justify-content:center;gap:8px}.contact .btn.p{background:#fff;color:var(--ink)}
+footer{text-align:center;color:var(--mute);font-size:13px;padding-bottom:30px}
+.js .rv{opacity:0;transform:translateY(28px);transition:opacity .8s,transform .8s}.js .rv.in{opacity:1;transform:none}
+@media(max-width:800px){.hero{grid-template-columns:1fr;min-height:auto}.stats{grid-template-columns:1fr 1fr}.grid{grid-template-columns:1fr}nav .links{display:none}section{padding:60px 5vw}.contact .rv{flex-direction:column;align-items:stretch}.contact .btn{margin:0;text-align:center}.contact{margin:30px 4vw 40px}}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.rv{opacity:1;transform:none}}
+.me{width:108px;height:108px;border-radius:50%;object-fit:cover;object-position:center top;border:3px solid #fff;box-shadow:0 0 0 2px var(--acc2),0 14px 30px -12px rgba(0,0,0,.35);margin-bottom:22px;animation:fl 6s ease-in-out infinite}@keyframes fl{50%{transform:translateY(-6px)}}
+.vid{display:grid;grid-template-columns:auto 1fr;gap:44px;align-items:center}.vid .fr{width:min(300px,100%);aspect-ratio:9/16;border-radius:22px;overflow:hidden;border:1px solid var(--line);box-shadow:0 30px 60px -30px rgba(31,78,95,.45);background:#fff}.vid iframe{width:100%;height:100%;border:0}@media(max-width:800px){.vid{grid-template-columns:1fr;justify-items:center;text-align:center}}
+.poster{display:block;position:relative;width:100%;height:100%;text-decoration:none;color:#fff;background:#1d2330}.poster img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:0}.poster:after{content:"";position:absolute;inset:0;background:linear-gradient(transparent 45%,rgba(29,35,48,.88));z-index:1}.play{position:absolute;left:50%;top:44%;transform:translate(-50%,-50%);width:68px;height:68px;border-radius:50%;background:rgba(255,255,255,.93);z-index:2;transition:.25s}.play:before{content:"";position:absolute;left:27px;top:20px;border-left:20px solid #1d2330;border-top:14px solid transparent;border-bottom:14px solid transparent}.poster:hover .play{transform:translate(-50%,-50%) scale(1.1)}.poster b{position:absolute;left:0;right:0;bottom:20px;text-align:center;z-index:2;font-size:15px}
+</style><script>document.documentElement.className='js'</script></head><body>
+<nav><a class="logo" href="#top" style="text-decoration:none">
+<svg width="34" height="34" viewBox="0 0 48 48" aria-label="RP logo"><rect x="1" y="1" width="46" height="46" rx="12" fill="#1d2330"/><path d="M14 35V13h9a6 6 0 010 12h-9M23 25l9 10" fill="none" stroke="#f7f6f2" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/><path d="M27 21l5-5 4 3 5-7" fill="none" stroke="#b08d57" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+<span>Ramakrishna Pampana</span></a>
+<div class="links"><a href="#impact">Impact</a><a href="#expertise">Expertise</a><a href="#experience">Experience</a><a href="#contact">Contact</a></div></nav>
+
+<section class="hero" id="top">
+<div><img class="me" src="photo.jpg" alt="Ramakrishna Pampana"><div class="tag">FP&amp;A · Business Finance · CMA</div>
+<h1>Turning budgets into decisions leaders can act on.</h1>
+<p class="lead">12 years in finance, 6 in FP&amp;A. I build budgets, rolling forecasts and dashboards that make business performance visible, from ₹50 Cr to ₹408 Cr portfolios. CMA with All India Rank 35 (Final).</p>
+<div class="btns"><a class="btn p" href="#contact">Get in touch</a><a class="btn" href="#experience">See experience</a></div></div>
+<div class="reel" aria-hidden="true"><div class="top"><span>FY Budget vs Forecast</span><span>● live</span></div>
+<div class="kpi"><div><b>₹408 Cr</b>Revenue plan</div><div><b>₹86 Cr</b>EBITDA target</div><div><b>+10–12%</b>Forecast accuracy</div></div>
+<div class="bars"><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+<svg class="line" viewBox="0 0 300 60" preserveAspectRatio="none"><path d="M0 50 C40 45 60 20 100 28 S160 40 200 18 S270 8 300 4"/></svg></div>
+</section>
+
+<section id="intro"><div class="vid"><div class="fr rv"><a class="poster" href="https://www.youtube.com/shorts/8Cc4_HAdMAQ" target="_blank" rel="noopener"><img id="pimg" alt=""><span class="play"></span><b>Watch my intro</b></a></div><div><div class="tag rv">Intro</div><h2 class="rv">Hear it from me</h2><p class="lead rv">A short introduction to my background and the roles I’m looking for.</p><div class="btns rv"><a class="btn" href="https://www.youtube.com/shorts/8Cc4_HAdMAQ" target="_blank" rel="noopener">Watch on YouTube</a></div></div></div></section>
+
+<section id="impact"><div class="tag rv">Impact</div><h2 class="rv">Results from the resume</h2>
+<div class="stats">
+<div class="stat rv"><b data-n="408" data-p="₹" data-s=" Cr">₹408 Cr</b><span>Revenue portfolio budgeted</span></div>
+<div class="stat rv"><b data-n="16" data-s="%">16%</b><span>Fewer reporting errors</span></div>
+<div class="stat rv"><b data-n="20" data-s="%">20%</b><span>Finance process efficiency gain</span></div>
+<div class="stat rv"><b data-n="30" data-p="₹" data-s=" L">₹30 L</b><span>GST refund recovered</span></div></div></section>
+
+<section id="expertise"><div class="tag rv">Expertise</div><h2 class="rv">What I do</h2>
+<div class="grid">
+<div class="card rv"><h3>Budgeting &amp; Forecasting</h3><p>Annual budgets, rolling forecasts and scenario planning tied to business goals.</p></div>
+<div class="card rv"><h3>Variance &amp; P&amp;L Analysis</h3><p>Monthly reviews that explain the why behind numbers and trigger corrective action.</p></div>
+<div class="card rv"><h3>MIS &amp; Dashboards</h3><p>KPI dashboards and management reports in Power BI and SAP BW, delivered on time.</p></div>
+<div class="card rv"><h3>Cash Flow Management</h3><p>Forecasting and payment prioritisation across ₹20 Cr monthly inflows.</p></div>
+<div class="card rv"><h3>Finance Business Partnering</h3><p>Challenging assumptions with sales and operations to protect margins.</p></div>
+<div class="card rv"><h3>Governance &amp; Compliance</h3><p>SOPs, controls, GST, TDS and 25+ overseas filings with zero issues.</p></div></div>
+<div class="pills rv" style="margin-top:28px"><span>SAP</span><span>SAP BW</span><span>Power BI</span><span>Excel</span><span>GST &amp; TDS</span><span>Stakeholder management</span></div></section>
+
+<section id="experience"><div class="tag rv">Experience</div><h2 class="rv">Career timeline</h2>
+<div class="tl">
+<div class="job rv"><h3>Career break</h3><div class="m">Jun 2026 – Current</div><ul><li>Upgrading AI skills: agents, assistants and automations.</li></ul></div>
+<div class="job rv"><h3>Assistant Manager, Finance &amp; Accounts</h3><div class="m">Avirata Defence Systems Ltd · Mar 2025 – May 2026</div><ul><li>Improved forecast accuracy by 10–12% with rolling forecasts and monthly variance reviews.</li><li>Led annual budgeting for a ₹408 Cr revenue portfolio to achieve an ₹86 Cr EBITDA target.</li><li>Standardised financial reporting with SOPs and KPI dashboards.</li><li>Managed ₹20 Cr monthly inflows and ₹17 Cr disbursements through cash flow forecasts.</li><li>Presented P&amp;L reviews against a ₹310 Cr budget, contributing to ₹43 Cr EBITDA (18%).</li></ul></div>
+<div class="job rv"><h3>Finance Manager</h3><div class="m">Healy World Trading India · May 2024 – Jan 2025</div><ul><li>Led ₹50 Cr annual budgeting and rolling forecasts, improving accuracy by 10–12%.</li><li>Cut reporting errors by 16% and lifted efficiency by 20% with SOPs and governance controls.</li><li>Built 2 monthly MIS reports and 6 FP&amp;A dashboards, improving reporting governance by 9%.</li><li>Streamlined Indian financials consolidation in partnership with global HQ.</li></ul></div>
+<div class="job rv"><h3>Finance Manager</h3><div class="m">Armour Display Systems · Jul 2023 – May 2024</div><ul><li>Delivered 100% on-time MIS reports and KPI dashboards across 10–15 regions.</li><li>Primary payment approver; reviewed payroll and TDS for 120+ employees and coordinated audits, improving internal controls by 8%.</li><li>Challenged assumptions in cross-functional reviews to support proactive margin management.</li><li>Led annual budgeting and quarterly forecasting for a ₹50–100 Cr revenue portfolio.</li></ul></div>
+<div class="job rv"><h3>Senior Finance Executive</h3><div class="m">Finaks Advisory Services · May 2022 – Jun 2023</div><ul><li>Executed 25+ overseas compliance filings a year with zero compliance issues.</li><li>Recovered ₹30 Lakh in GST refunds with zero audit observations.</li><li>Built annual budgets, rolling forecasts and variance analysis for a ₹60 Cr business.</li><li>Managed ₹5 Cr average monthly inflows, with 100% on-time vendor payments and a payable cycle shortened by one week.</li></ul></div>
+<div class="job rv"><h3>Financial Analyst</h3><div class="m">HP Computing and Printing Systems India · Sep 2021 – Feb 2022</div><ul><li>Reconciled ₹5+ Cr of prepaid expenses, improving month-end close accuracy.</li><li>Cut reconciliation exceptions by 15% and manual review time by 20 hours a month.</li><li>Improved forecast accuracy by 10% by resolving amortisation timing mismatches.</li></ul></div>
+<div class="job rv"><h3>Team Lead</h3><div class="m">Capgemini Technology Services · Mar 2019 – Jul 2021</div><ul><li>Cut month-end close time by 18% with 98% accurate reporting.</li><li>Reduced report generation time by 25% by automating data flow with SAP BW.</li><li>Led a global initiative to standardise intercompany reconciliations across 2 entities.</li></ul></div>
+<div class="job rv"><h3>Accounts Manager</h3><div class="m">Saranakantha B &amp; Co, Chartered Accountants · Jun 2014 – Feb 2019</div><ul><li>Ran end-to-end accounting for 5+ clients with ₹28+ Cr annual revenue and 85–95% client retention.</li><li>Prepared MIS reports and reconciliations, improving financial accuracy by 10% with 95% on-time client reporting.</li></ul></div></div>
+<h3 class="rv" style="margin:30px 0 8px">Credentials</h3>
+<p class="rv" style="color:var(--mute);margin:0">Certified CMA, The Institute of Cost Accountants of India (2010–2014) · All India Rank 35 (Final), 47 (Inter) · CA-IPCC, ICAI (2009–2011) · Bachelor of Business Management, Gulbarga University (2005–2008)</p></section>
+
+<section class="contact" id="contact"><h2 class="rv">Let’s talk</h2><p class="rv">Open to FP&amp;A and finance business partnering roles in Bengaluru, Hyderabad or remote.</p>
+<div class="rv"><a class="btn p" href="mailto:cma.ramakrishna9@gmail.com">cma.ramakrishna9@gmail.com</a><a class="btn" href="tel:+919035121904">+91 90351 21904</a><a class="btn" href="https://linkedin.com/in/ramakrishna-finance-accounts" target="_blank" rel="noopener">LinkedIn</a></div></section>
+<footer>© Ramakrishna Pampana · Bengaluru · Open to Hyderabad &amp; remote</footer>
+<script>
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(!e.isIntersecting)return;e.target.classList.add('in');const n=e.target.querySelector('[data-n]');if(n&&!n.done){n.done=1;const t=+n.dataset.n,p=n.dataset.p||'',s=n.dataset.s||'';let s0=null;const f=ts=>{s0=s0||ts;const k=Math.min((ts-s0)/1200,1);n.textContent=p+Math.round(t*(1-Math.pow(1-k,3)))+s;if(k<1)requestAnimationFrame(f)};requestAnimationFrame(f)}io.unobserve(e.target)}),{threshold:.15});
+const all=[...document.querySelectorAll('.rv')];all.forEach((el,i)=>{el.style.transitionDelay=(i%4)*70+'ms';io.observe(el)});
+const show=el=>{el.classList.add('in');const n=el.querySelector('[data-n]');if(n&&!n.done){n.done=1;n.textContent=(n.dataset.p||'')+n.dataset.n+(n.dataset.s||'')}};
+const chk=()=>all.forEach(el=>{if(!el.classList.contains('in')&&el.getBoundingClientRect().top<innerHeight*.95)show(el)});
+addEventListener('scroll',chk,{passive:true});addEventListener('resize',chk);const pi=document.getElementById('pimg'),me=document.querySelector('.me');if(pi&&me)pi.src=me.src;setTimeout(chk,1200);setTimeout(()=>all.forEach(show),4000);
+</script></body></html>
